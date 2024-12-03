@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 /* font-family: 'Montserrat', Arial, sans-serif; */
+/* font-family: "Jost", serif; */
 }
 
 /* Header Starts */
@@ -170,9 +171,10 @@ nav .nav-list ul li:hover{
     display: flex;
     justify-content: center;
 }
-.new-arrivals h1{
+.new-arrivals h2{
     text-align: center;
-    
+    font-family: "Jost", serif;
+    font-weight: 600;
 }
 /* New Arrivals Ends */
 
