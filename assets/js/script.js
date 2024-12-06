@@ -107,15 +107,24 @@ $(document).ready(function () {
 });
   
 
-// Functionality For Footer Section
-// let footIconBox = document.querySelectorAll('.footer-icon-row .footer-icon');
-// let footIcon = document.querySelectorAll('.footer-icon-row .footer-icon i');
+// Functionality For Collection Page Product Range Input
+const rangeInput = document.getElementById('price-range');
+const priceDisplay = document.querySelector('.range-price h5');
 
-// footIconBox.forEach((box, i) => {
-//     box.addEventListener('mouseenter', () => {
-//         footIcon[i].style.color = '#634c1b';
-//     })
-//     box.addEventListener('mouseleave', () => {
-//         footIcon[i].style.color = '#fff';
-//     })
-// })
+rangeInput.min = 0;
+rangeInput.max = 10000;
+rangeInput.step = 1;
+rangeInput.value = 0;
+
+rangeInput.addEventListener('input', () => {
+    priceDisplay.textContent = rangeInput.value; 
+});
+
+
+// Functionality For Collection Card Heart Icon
+document.querySelectorAll('.collection-card .card-img i').forEach(icon => {
+    icon.addEventListener('click', () => {
+        icon.classList.add('active');
+    });
+});
+
