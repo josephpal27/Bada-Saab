@@ -128,6 +128,9 @@ nav .nav-list ul a{
     color: #7a663c;
     font-weight: 700;
 }
+nav .nav-list ul li{
+    border-bottom: 3px solid transparent;
+}
 nav .nav-list ul li.active,
 nav .nav-list ul li:hover{
     border-bottom: 3px solid #fff;

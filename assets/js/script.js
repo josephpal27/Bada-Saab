@@ -128,3 +128,36 @@ document.querySelectorAll('.collection-card .card-img i').forEach(icon => {
     });
 });
 
+
+// Functionality For Product Details Page Gallery
+document.addEventListener('DOMContentLoaded', () => {
+    const mainImg = document.querySelector('.gallery-main-img img'); // Main image element
+    const topImages = document.querySelectorAll('.gallery-top .gallery-img-row img'); // Top row images
+    const bottomImages = document.querySelectorAll('.gallery-bottom .gallery-img-row img'); // Bottom row images
+
+    // Set the main image to the first image in the top row initially
+    mainImg.setAttribute('src', topImages[0].getAttribute('src'));
+
+    // Function to update the main image by setting its src attribute
+    const updateMainImage = (src) => {
+        mainImg.setAttribute('src', src);
+    };
+
+    // Add event listeners for the top images
+    topImages.forEach(image => {
+        image.addEventListener('click', () => {
+            updateMainImage(image.getAttribute('src')); // Update the main image when a top row image is clicked
+        });
+    });
+
+    // Add event listeners for the bottom images
+    bottomImages.forEach(image => {
+        image.addEventListener('click', () => {
+            updateMainImage(image.getAttribute('src')); // Update the main image when a bottom row image is clicked
+        });
+    });
+});
+
+
+
+
