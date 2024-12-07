@@ -15,6 +15,8 @@ $(document).ready(function () {
   });
 
 
+  // ----------------------------------------------------------------------------------------------------------
+
   // New Arrivals Slider Functionality
   $(document).ready(function () {
     $('.new-arrival-slider').slick({
@@ -52,6 +54,8 @@ $(document).ready(function () {
 });
 
 
+// ----------------------------------------------------------------------------------------------------------
+
 // Signature Slider Functionality
 $(document).ready(function () {
   $('.signature-slider').slick({
@@ -68,7 +72,9 @@ $(document).ready(function () {
     nextArrow: '<button class="slick-next"></button>', 
   });
 });
+
  
+// ----------------------------------------------------------------------------------------------------------
 
   // Festive Edit Slider Functionality
   $(document).ready(function () {
@@ -105,21 +111,9 @@ $(document).ready(function () {
         ]
     });
 });
-  
 
-// Functionality For Collection Page Product Range Input
-const rangeInput = document.getElementById('price-range');
-const priceDisplay = document.querySelector('.range-price h5');
 
-rangeInput.min = 0;
-rangeInput.max = 10000;
-rangeInput.step = 1;
-rangeInput.value = 0;
-
-rangeInput.addEventListener('input', () => {
-    priceDisplay.textContent = rangeInput.value; 
-});
-
+// ----------------------------------------------------------------------------------------------------------
 
 // Functionality For Collection Card Heart Icon
 document.querySelectorAll('.collection-card .card-img i').forEach(icon => {
@@ -128,35 +122,81 @@ document.querySelectorAll('.collection-card .card-img i').forEach(icon => {
     });
 });
 
+// ----------------------------------------------------------------------------------------------------------
+
 
 // Functionality For Product Details Page Gallery
 document.addEventListener('DOMContentLoaded', () => {
-    const mainImg = document.querySelector('.gallery-main-img img'); // Main image element
-    const topImages = document.querySelectorAll('.gallery-top .gallery-img-row img'); // Top row images
-    const bottomImages = document.querySelectorAll('.gallery-bottom .gallery-img-row img'); // Bottom row images
+    const mainImg = document.querySelector('.gallery-main-img img');
+    const topImages = document.querySelectorAll('.gallery-top .gallery-img-row img');
+    const bottomImages = document.querySelectorAll('.gallery-bottom .gallery-img-row img');
 
-    // Set the main image to the first image in the top row initially
     mainImg.setAttribute('src', topImages[0].getAttribute('src'));
 
-    // Function to update the main image by setting its src attribute
     const updateMainImage = (src) => {
         mainImg.setAttribute('src', src);
     };
 
-    // Add event listeners for the top images
     topImages.forEach(image => {
         image.addEventListener('click', () => {
-            updateMainImage(image.getAttribute('src')); // Update the main image when a top row image is clicked
+            updateMainImage(image.getAttribute('src'));
         });
     });
 
-    // Add event listeners for the bottom images
     bottomImages.forEach(image => {
         image.addEventListener('click', () => {
-            updateMainImage(image.getAttribute('src')); // Update the main image when a bottom row image is clicked
+            updateMainImage(image.getAttribute('src'));
         });
     });
 });
+
+
+// ----------------------------------------------------------------------------------------------------------
+
+// Functionality For Custom Size Box Toggle
+let customCheckbox = document.querySelector('#custom-size input[type="checkbox"]');
+let customText = document.querySelector('#custom-size span');
+let customBox = document.querySelector('.custom-size-box');
+
+customText.addEventListener('click', () => {
+    customBox.classList.toggle('hide');
+    if (customCheckbox.checked) {
+        customCheckbox.checked = false;
+    } else {
+        customCheckbox.checked = true;
+    }
+});
+
+customCheckbox.addEventListener('click', () => {
+    customBox.classList.toggle('hide');
+});
+
+
+// Functionality For product Details Page Favourite Icon
+let heartBtn = document.querySelector('.product-details-right .btn-row .heart-btn');
+heartBtn.addEventListener('click', () => {
+    heartBtn.classList.toggle('fa-regular');
+    heartBtn.classList.toggle('fa-solid');
+})
+
+// ----------------------------------------------------------------------------------------------------------
+
+
+// Functionality For Product Details Page Modal
+let viewSizeChart = document.querySelector('#view-size-chart');
+let modalCloseBtn = document.querySelector('#modal-close-btn');
+
+viewSizeChart.addEventListener('click', () => {
+    $('#sizeChartModal').modal('show');
+});
+modalCloseBtn.addEventListener('click', () => {
+    $('#sizeChartModal').modal('hide');
+});
+
+
+
+
+
 
 
 

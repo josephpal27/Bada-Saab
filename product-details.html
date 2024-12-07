@@ -136,10 +136,230 @@
 
         <!-- Product Details Right -->
         <div class="product-details-right">
+            <div class="product-name">
+                <h1>Stylish Shirt</h1>  
+            </div>
+            <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="product-price">
+                <p>Rs. 999 (MRP inclusive of all taxes)</p>
+            </div>
+            <div class="product-size">
+                <!-- Modal Trigger -->
+                <p>Select Size: <span id="view-size-chart">View Size Chart</span></p>
+                <!-- Modal -->
+                <div class="modal fade" id="sizeChartModal" tabindex="-1" role="dialog" aria-labelledby="sizeChartModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="sizeChartModalLabel">Size Chart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close-btn">
+                                    <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img id="sizeChartImage" src="assets/images/sizechart.webp" alt="Size Chart" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <form action="">
+                    <div class="size-box-row">
+                        <input type="button" value="XS">
+                        <input type="button" value="S">
+                        <input type="button" value="M">
+                        <input type="button" value="L">
+                        <input type="button" value="XL">
+                        <input type="button" value="XXL">
+                    </div>
+                    <!-- Custom Size -->
+                    <p id="custom-size"><input type="checkbox" name="size"> <span>Select Custom Size</span></p>
+                    <!-- Custom Size Box -->
+                    <div class="custom-size-box hide">
+                        <h3>Enter Your Measurements:</h3>
+                        <input type="number" name="chest" placeholder="Chest (Inches)">
+                        <input type="number" name="chest" placeholder="Waist (Inches)">
+                        <input type="number" name="hip" placeholder="Hip (Inches)">
+                        <input type="number" name="height" placeholder="Height (Inches)">
+                        <input type="button" value="Submit Measurements">
+                    </div>
+                    <div class="btn-row">
+                        <i class="fa-regular fa-heart heart-btn"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                    </div>
+                </form>
+            </div>
 
+            <!-- Accordian -->
+            <div class="product-accordian">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Product Detail
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia!</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Features
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Product Declaration
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Shipping & Returns
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem.</div>
+                      </div>
+                    </div>
+                  </div>
+            </div> 
         </div> 
     </section> 
     <!-- Product Details Ends -->
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="footer container-lg">
+            <!-- Left -->
+            <div class="foot-left">
+                <div class="left-1">
+                    <!-- Floating Card -->
+                    <div class="foot-card">
+                        <!-- Head -->
+                        <div class="foot-card-head">
+                            <div class="foot-logo" style="display: flex; justify-content: center;">
+                                <img src="assets/images/logo.png" alt="logo" width="260">
+                            </div>
+                        </div>
+                        <!-- Para -->
+                        <p class="m2-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste voluptate corporis excepturi consectetur debitis.
+                        </p>
+                        <!-- Address -->
+                        <div class="foot-address">
+                            <div class="address-row">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, temporibus?</p>
+                            </div>
+                            <div class="address-row">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p><a href="">example@gmail.com</a></p>
+                            </div>
+                            <div class="address-row">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+91 - 0000000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-2">
+                    <h5>Quick Links</h5>
+                    <div class="footer-list">
+                        <a href="index.html">
+                            <p><i class="fa-solid fa-angle-right"></i> Heritage</p>
+                        </a>
+                        <a href="legacy.html">
+                            <p><i class="fa-solid fa-angle-right"></i> Legacy</p>
+                        </a>
+                        <a href="collection.html">
+                            <p><i class="fa-solid fa-angle-right"></i> Collection</p>
+                        </a>
+                        <a href="exclusives.html">
+                            <p><i class="fa-solid fa-angle-right"></i> Exclusives</p>
+                        </a>
+                        <a href="contact.html">
+                            <p><i class="fa-solid fa-angle-right"></i> Contact Us</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="foot-right">
+                <div class="right-1">
+                    <h5>Products</h5>
+                    <div class="footer-list">
+                        <a href="">
+                            <p><i class="fa-solid fa-angle-right"></i> Product 1</p>
+                        </a>
+                        <a href="">
+                            <p><i class="fa-solid fa-angle-right"></i> Product 2</p>
+                        </a>
+                        <a href="">
+                            <p><i class="fa-solid fa-angle-right"></i> Product 3</p>
+                        </a>
+                        <a href="">
+                            <p><i class="fa-solid fa-angle-right"></i> Product 4</p>
+                        </a>
+                        <a href="">
+                            <p><i class="fa-solid fa-angle-right"></i> Product 5</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-2">
+                    <h5>Opening Hours</h5>
+                    <div class="footer-list">
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Monday - Tuesday</span> <span>09:00 - 17:00</span></p>
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Wednesday</span> <span>09:00 - 16:00</span></p>
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Thursday - Friday</span> <span>09:00 - 17:00</span></p>
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Sunday</span> <span>Clossed</span></p>
+                    </div>
+                    <div class="footer-icon-row">
+                        <!-- icon 1 -->
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <!-- icon 2 -->
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <!-- icon 3 -->
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <!-- icon 4 -->
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright container-lg">
+            <div class="line"></div>
+            <p>Bada Saab © 2024 All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
 
 
 

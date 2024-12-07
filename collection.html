@@ -469,6 +469,21 @@
         }, 1000);
     </script>
 
+    <!-- Functionality For Collection Page Product Range Input -->
+    <script>
+        const rangeInput = document.getElementById('price-range');
+        const priceDisplay = document.querySelector('.range-price h5');
+
+        rangeInput.min = 0;
+        rangeInput.max = 10000;
+        rangeInput.step = 1;
+        rangeInput.value = 0;
+
+        rangeInput.addEventListener('input', () => {
+            priceDisplay.textContent = rangeInput.value; 
+        });
+    </script>
+
     <!-- JS Link -->
     <script src="assets/js/script.js"></script>
 
