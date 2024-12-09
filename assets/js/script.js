@@ -193,6 +193,37 @@ modalCloseBtn.addEventListener('click', () => {
     $('#sizeChartModal').modal('hide');
 });
 
+// -------------------------------------------------------------------------------------------------------------------
+
+// Functionality For Product Details Page Share Button
+document.querySelector('.share-btn').addEventListener('click', async () => {
+    const currentProductLink = window.location.href; // Get the current page URL
+
+    // Copy the link to the clipboard
+    try {
+        await navigator.clipboard.writeText(currentProductLink);
+        console.log('Link copied to clipboard: ' + currentProductLink);
+    } catch (err) {
+        console.error('Failed to copy link: ', err);
+    }
+
+    // Use Web Share API for sharing options
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: 'Check this product!',
+                text: 'Check out this amazing product:',
+                url: currentProductLink,
+            });
+            console.log('Shared successfully!');
+        } catch (err) {
+            console.error('Error sharing: ', err);
+            }
+        } else {
+            alert('Share options not supported in this browser. The link is copied to your clipboard.');
+        }
+    });
+
 
 
 
