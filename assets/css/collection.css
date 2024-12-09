@@ -78,6 +78,26 @@
     width: 100%;
 }
 
+.accordian-apply-btn{
+    margin-top: 1rem;
+}
+.accordian-apply-btn button{
+    width: 100%;
+    padding: 0.6rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4be8f;
+    color: #fff;
+    font-family: 'Jost', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.accordian-apply-btn button:hover{
+    background-color: #b9a068;
+}
+
 .collection-right{
     width: 76.5%;
     max-height: 138.3vh;
