@@ -109,7 +109,9 @@ nav .nav-search .cart-btn button{
     transition: all 0.2s ease;
 }
 nav .nav-search .wishlist-btn button:hover,
-nav .nav-search .cart-btn button:hover{
+nav .nav-search .cart-btn button:hover,
+nav .nav-search .wishlist-btn button.active,
+nav .nav-search .cart-btn button.active{
     background-color: #d4be8f;
     color: #fff;
 }
