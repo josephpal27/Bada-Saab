@@ -1,3 +1,21 @@
+  
+    // Functionality For Cart Head Total Product Count
+    let totalProduct = document.getElementById('total-products');
+    let item = document.getElementById('item');
+
+    function calculateTotalProducts(){
+        if (totalProduct.innerText > 1) {
+            item.innerText = ' Items';
+        } else {
+            item.innerText = ' Item';
+        }
+    }
+
+    calculateTotalProducts();
+
+
+  //  ----------------------------------------------------------------------------------------------------------
+  
   // Functionality For Cart Page Product List Close Button
   let products = document.querySelectorAll('.cart-product');
   let closeBtns = document.querySelectorAll('.cart-product .close-btn img');
