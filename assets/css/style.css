@@ -210,7 +210,7 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
 .festive-slider .slick-prev,
 .festive-slider .slick-next {
     position: absolute;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     z-index: 10;
     background-color: #aa9056;
