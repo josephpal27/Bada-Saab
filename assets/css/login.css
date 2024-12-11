@@ -24,7 +24,7 @@ body{
     width: 50%;
     padding: 3rem 4rem;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -8px;
+    box-shadow: #a78b4f 0px 12px 28px -5px, #e8c375e3 0px 8px 8px -8px;
 }
 .account-form .input-box{
     margin-bottom: 1rem;
