@@ -19,10 +19,12 @@ body{
     justify-content: center;
 }
 .account-form form{
-    background-color: #dec99b;
+    /* background-color: #dec99b; */
+    background-color: #fff;
     width: 50%;
     padding: 3rem 4rem;
     border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -8px;
 }
 .account-form .input-box{
     margin-bottom: 1rem;
@@ -30,7 +32,8 @@ body{
 .account-form .input-box p{
     margin: 0;
     margin-bottom: 0.5rem;
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
     font-weight: 500;
     font-size: 1.1rem;
 }
@@ -45,12 +48,16 @@ body{
     font-weight: 500;
     outline: 2px solid transparent;
     font-size: 1.1rem;
+    background-color: #fffbf0;
+    box-shadow: #fadc9ca4 0px 3px 8px;
 }
 .account-form form input:focus{
-    outline: 2px solid #9d7e4d;
+    /* outline: 2px solid #9d7e4d; */
+    box-shadow: #e7c988 0px 3px 8px;
 }
 .account-form form input::placeholder{
-    color: #d6d6d6;
+    /* color: #d6d6d6; */
+    color: #707070;
     font-weight: 400;
 }
 .account-form form input[type="checkbox"]{
@@ -60,7 +67,9 @@ body{
     margin-right: 5px;
     outline: none;
     border: none;
+    box-shadow: none;
     accent-color: #7a663c;
+    cursor: pointer;
 }
 .account-form form #checkBoxInput p{
    display: flex;
@@ -74,7 +83,7 @@ body{
    width: 30%;
    padding: 0.6rem 0;
    border: none;
-   background-color: #9f8959;
+   background-color: #af9765;
    color: #fff;
    font-weight: 600;
    text-transform: uppercase;
