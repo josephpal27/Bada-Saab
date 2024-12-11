@@ -150,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // ----------------------------------------------------------------------------------------------------------
 
 // Functionality For Custom Size Box Toggle
@@ -194,6 +193,7 @@ modalCloseBtn.addEventListener('click', () => {
 });
 
 // -------------------------------------------------------------------------------------------------------------------
+
 
 // Functionality For Product Details Page Share Button
 document.querySelector('.share-btn').addEventListener('click', async () => {

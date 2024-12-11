@@ -252,7 +252,10 @@ body{
 }
 .suggested-products-slider .slide{
     width: 25%;
-    margin: 0 10px;
+    margin: 7px 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
+    border-radius: 5px;
 }
 .suggested-products-slider .slide img{
     width: 100%;
@@ -263,16 +266,19 @@ body{
     margin-top: 1rem;
     font-weight: 400;
     color: #484848;
+    margin-left: 0.5rem;
 }
 .suggested-products-slider .slide h2{
     font-size: 1.6rem;
     font-weight: 500;
     color: #1b1b1b;
+    margin-left: 0.5rem;
 }
 .suggested-products-slider .slide .suggested-slide-btns{
     display: flex;
     justify-content: space-between;
     margin-top: 0.8rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 .suggested-products-slider .slide .suggested-slide-btns a{
     width: 49%;

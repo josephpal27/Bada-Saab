@@ -36,6 +36,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
     margin-bottom: 2.5rem;
 }
+.wishlist-card.hide{
+    display: none;
+}
 .wishlist-card img{
     width: 100%;
 }
