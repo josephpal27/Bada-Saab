@@ -1,0 +1,76 @@
+body{
+    background-color: #fffdf1;
+}
+
+/* Wishlist Starts */
+.wishlist{
+    padding: 2rem 4%;
+    overflow: hidden;
+    font-family: 'Jost', Arial, sans-serif;
+    background-color: #fffdf1;
+}
+.wishlist-head{
+    border-bottom: 1px solid #e1ca9a;
+    padding-bottom: 0.5rem;
+}
+.wishlist-head h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #584620;
+}
+.wishlist-head span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+.wishlist-row{
+    display: flex;
+    gap: 2.5%;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.wishlist-card{
+    width: 23.1%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 2.6px;
+    margin-bottom: 2.5rem;
+}
+.wishlist-card img{
+    width: 100%;
+}
+.wishlist-card .wishlist-card-body button{
+    width: 100%;
+    padding: 0.6rem 0;
+    border: none;
+    font-weight: 600;
+    font-size: 1.15rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+.wishlist-card .wishlist-card-body button i{
+    margin-right: 5px;
+    color: #66542d;
+    transition: all 0.2s ease;
+}
+.wishlist-card .wishlist-card-body button:hover{
+    background-color: #d4be8f;
+    color: #fff;
+}
+.wishlist-card .wishlist-card-body button:hover i{
+    color: #fff;
+}
+.wishlist-card .remove-btn{
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+}
+.wishlist-card .remove-btn i{
+    color: #66542d;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.wishlist-card .remove-btn i:hover{
+    color: #910000;
+}
+/* Wishlist Ends */
