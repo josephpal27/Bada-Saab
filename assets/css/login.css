@@ -3,7 +3,7 @@ body{
 }
 
 .account{
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     font-family: 'Jost', Arial, sans-serif;
 }
 .account h1{
@@ -17,6 +17,7 @@ body{
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .account-form form{
     /* background-color: #dec99b; */
@@ -49,11 +50,12 @@ body{
     outline: 2px solid transparent;
     font-size: 1.1rem;
     background-color: #fffbf0;
-    box-shadow: #fadc9ca4 0px 3px 8px;
+    color: #666666;
+    box-shadow: #f2d596 0px 3px 8px;
 }
 .account-form form input:focus{
     /* outline: 2px solid #9d7e4d; */
-    box-shadow: #e7c988 0px 3px 8px;
+    box-shadow: #bd9a4e 0px 3px 8px;
 }
 .account-form form input::placeholder{
     /* color: #d6d6d6; */
@@ -92,4 +94,17 @@ body{
 }
 .account-form form .submit-btn button:hover{
    background-color: #756134;
+}
+.form-foot-text{
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
+.form-foot-text a{
+    color: #756134;
+    font-size: 0.9rem;
+    transition: all 0.1s ease;
+}
+.form-foot-text a:hover{
+    color: #755e28;
 }
