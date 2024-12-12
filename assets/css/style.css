@@ -20,6 +20,7 @@ header{
 }
 header .header-left, .header-right{
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 header i{
@@ -42,6 +43,45 @@ header .header-icons i:hover{
 header a{
     text-decoration: none;
     color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  header{
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem 0.55rem 1rem;
+  }
+  header .header-left, .header-right{
+    gap: 1rem;
+}
+  header .header-icons i{
+    width: 1.3rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header .header-contact,
+  header .header-email,
+  header .header-location{
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  header{
+    padding: 0.37rem 0.5rem 0.45rem 0.5rem;
+  }
+  header .header-user #bar,
+  header .header-user #sign-up{
+    display: none;
+  }
+  header .header-icons i{
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+  }
 }
 /* Header Ends */
 
@@ -139,6 +179,67 @@ nav .nav-list ul li:hover{
 }
 nav .nav-list ul li.active ~ .nav-list ul li a{
     font-weight: 800;
+}
+
+@media screen and (max-width: 1450px) {
+  nav{
+    padding: 0.7rem 1rem;
+  }
+  nav .nav-right{
+      padding: 0.5rem 0 0.4rem 0;
+  }
+  nav .nav-search{
+    gap: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-search .search-box span{
+    display: none;
+  }
+  nav .nav-search .wishlist-btn button,
+  nav .nav-search .cart-btn button{
+    width: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav{
+    padding: 0.7rem 0.5rem;
+    overflow: hidden;
+  }
+  nav .nav-right{
+    padding: 0.1rem 0 0.4rem 0;
+  }
+  .nav-search span{
+    display: none;
+  }
+  nav .nav-search .wishlist-btn button,
+  nav .nav-search .cart-btn button{
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav{
+    padding: 0.7rem 0.5rem 0.4rem 0.5rem;
+  }
+  nav .nav-search{
+    gap: 0.4rem;
+  }
+  nav .nav-search .wishlist-btn button,
+  nav .nav-search .cart-btn button{
+    width: 2.6rem;
+  }
+  nav .nav-list ul{
+    gap: 0.6rem;
+    margin-top: 0.7rem;
+    width: 130%;
+    margin-left: -28%;
+  }
+  nav .nav-list ul a{
+      font-size: 0.65rem;
+  }
 }
 /* Navbar Ends */
 
