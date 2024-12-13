@@ -58,7 +58,8 @@
                 <a href=""><i class="fa-solid fa-truck"></i> Track Order</a>
             </div>
             <div class="header-user text-light">
-                <i class="fa-solid fa-user"></i> <a href="login.html">Log In</a> | <a href="signup.html">Sign Up</a>
+                <i class="fa-solid fa-user"></i> <a href="login.html">Log In</a> <span id="bar">|</span> <span
+                    id="sign-up"><a href="signup.html">Sign Up</a></span>
             </div>
         </div>
     </header>
@@ -77,14 +78,14 @@
                 <div class="search-box">
                     <form action="" method="post">
                         <input type="search" name="search" id="search" placeholder="Search for Products">
-                        <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                        <button><i class="fa-solid fa-magnifying-glass"></i> <span>Search</span></button>
                     </form>
                 </div>
                 <div class="wishlist-btn">
-                    <a href="wishlist.html"><button><i class="fa-solid fa-heart"></i> Wishlist</button></a>
+                    <a href="wishlist.html"><button><i class="fa-solid fa-heart"></i> <span>Wishlist</span></button></a>
                 </div>
                 <div class="cart-btn">
-                    <a href="cart.html"><button><i class="fa-solid fa-cart-shopping"></i> Cart</button></a>
+                    <a href="cart.html"><button><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></button></a>
                 </div>
             </div>
             <!-- Bottom -->
@@ -93,7 +94,7 @@
                     <li><a href="index.html">HERITAGE</a></li>
                     <li><a href="">LEGACY</a></li>
                     <li><a href="collection.html">COLLECTION</a></li>
-                    <li><a href="">EXCLUSIVES</a></li>
+                    <li><a href="index.html">EXCLUSIVES</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
@@ -121,7 +122,7 @@
                         <img src="assets/images/green-6.png" alt="Product Image">
                     </div>
                 </div>
-            </div> 
+            </div>
             <!-- Bottom -->
             <div class="gallery-bottom">
                 <!-- Bottom Row -->
@@ -131,13 +132,13 @@
                     <img src="assets/images/green-5.png" alt="Product Image">
                     <img src="assets/images/green-7.png" alt="Product Image">
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
 
         <!-- Product Details Right -->
         <div class="product-details-right">
             <div class="product-name">
-                <h1>Teel Green Tuxedo</h1>  
+                <h1>Teel Green Tuxedo</h1>
             </div>
             <div class="product-rating">
                 <i class="fa-solid fa-star"></i>
@@ -153,17 +154,20 @@
                 <!-- Modal Trigger -->
                 <p>Select Size: <span id="view-size-chart">View Size Chart</span></p>
                 <!-- Modal -->
-                <div class="modal fade" id="sizeChartModal" tabindex="-1" role="dialog" aria-labelledby="sizeChartModalLabel" aria-hidden="true">
+                <div class="modal fade" id="sizeChartModal" tabindex="-1" role="dialog"
+                    aria-labelledby="sizeChartModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="sizeChartModalLabel">Size Chart</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close-btn">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                    id="modal-close-btn">
                                     <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <img id="sizeChartImage" src="assets/images/sizechart.webp" alt="Size Chart" class="img-fluid">
+                                <img id="sizeChartImage" src="assets/images/sizechart.webp" alt="Size Chart"
+                                    class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -201,29 +205,38 @@
             <div class="product-accordian">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Product Details
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Teel green tuxedo suit with cutdana work which comes with narrow fit trousers and a stylish bow.</div>
-                      </div>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Product Details
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Teel green tuxedo suit with cutdana work which comes with narrow
+                                fit trousers and a stylish bow.</div>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Shipping & Returns
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem.</div>
-                      </div>
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Shipping & Returns
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est
+                                iusto earum voluptatum quaerat sapiente commodi minima maxime? Placeat, mollitia! Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, rem.</div>
+                        </div>
                     </div>
-                  </div>
-            </div> 
-        </div> 
-    </section> 
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Product Details Ends -->
 
     <!-- Footer Starts Here -->
@@ -241,7 +254,8 @@
                             </div>
                         </div>
                         <!-- Para -->
-                        <p class="m2-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste voluptate corporis excepturi consectetur debitis.
+                        <p class="m2-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iste
+                            voluptate corporis excepturi consectetur debitis.
                         </p>
                         <!-- Address -->
                         <div class="foot-address">
@@ -306,9 +320,11 @@
                 <div class="right-2">
                     <h5>Opening Hours</h5>
                     <div class="footer-list">
-                        <p><i class="fa-solid fa-angle-right"></i> <span>Monday - Tuesday</span> <span>09:00 - 17:00</span></p>
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Monday - Tuesday</span> <span>09:00 -
+                                17:00</span></p>
                         <p><i class="fa-solid fa-angle-right"></i> <span>Wednesday</span> <span>09:00 - 16:00</span></p>
-                        <p><i class="fa-solid fa-angle-right"></i> <span>Thursday - Friday</span> <span>09:00 - 17:00</span></p>
+                        <p><i class="fa-solid fa-angle-right"></i> <span>Thursday - Friday</span> <span>09:00 -
+                                17:00</span></p>
                         <p><i class="fa-solid fa-angle-right"></i> <span>Sunday</span> <span>Clossed</span></p>
                     </div>
                     <div class="footer-icon-row">

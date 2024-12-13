@@ -201,6 +201,12 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
   nav .nav-search .cart-btn button{
     width: 6.5rem;
   }
+  nav .nav-list ul{
+    gap: 0.9rem;
+  }
+  nav .nav-list ul a{
+      font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -218,18 +224,35 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
   nav .nav-search .cart-btn button{
     width: 3rem;
   }
+  nav .nav-list ul{
+    gap: 0.8rem;
+  }
+  nav .nav-list ul a{
+      font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
   nav{
     padding: 0.7rem 0.5rem 0.4rem 0.5rem;
+    overflow: hidden;
   }
   nav .nav-search{
     gap: 0.4rem;
   }
+  nav .nav-search .search-box input{
+    padding: 0.3rem 0 0.35rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  nav .nav-search .search-box button{
+    padding: 0 0.5rem;
+  }
   nav .nav-search .wishlist-btn button,
   nav .nav-search .cart-btn button{
-    width: 2.6rem;
+    width: 2.2rem;
+  }
+  nav .nav-search i{
+    font-size: 0.9rem;
   }
   nav .nav-list ul{
     gap: 0.6rem;
@@ -239,6 +262,13 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
   }
   nav .nav-list ul a{
       font-size: 0.65rem;
+  }
+  nav .nav-list ul li{
+    border-bottom: 2px solid transparent;
+  }
+  nav .nav-list ul li.active,
+  nav .nav-list ul li:hover{
+    border-bottom: 2px solid #fff;
   }
 }
 /* Navbar Ends */
