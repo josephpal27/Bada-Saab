@@ -333,6 +333,23 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
     font-size: 1.1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .new-arrivals{
+    padding: 0 4% 2rem 4%;
+  }
+  .new-arrivals .horse-gif img{
+    width: 80%;
+    margin-top: -0.5rem;
+  }
+  .new-arrivals h1{
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+  }
+  .new-arrival-slider .slide h3{
+    font-size: 0.9rem;
+  }
+}
+
 /* Slider Buttons Styles */
 .new-arrival-slider .slick-prev,
 .new-arrival-slider .slick-next,
@@ -378,6 +395,33 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
     opacity: 0.5;
     pointer-events: none;
 }
+
+@media screen and (max-width: 576px) {
+.new-arrival-slider .slick-prev,
+.new-arrival-slider .slick-next,
+.signature-slider .slick-prev,
+.signature-slider .slick-next,
+.festive-slider .slick-prev,
+.festive-slider .slick-next {
+    top: 48%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+}
+.new-arrival-slider .slick-prev,
+.signature-slider .slick-prev,
+.festive-slider .slick-prev {
+    left: -7px;
+}
+.new-arrival-slider .slick-next,
+.signature-slider .slick-next,
+.festive-slider .slick-next {
+    right: -7px;
+}
+.new-arrival-slider{
+  margin-top: 1rem;
+}
+}
 /* New Arrivals Ends */
 
 /* Signature Style Starts */
@@ -415,6 +459,28 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
 #signature-img-box-2{
     padding-top: 4.5rem;
 }
+
+@media screen and (max-width: 576px) {
+  .signature{
+    padding: 2rem 4% 1rem 4%;
+  }
+  .signature h1{
+    font-size: 1.2rem;
+  }
+  .signature-slider .slide{
+    padding: 0 15px;
+    margin-top: 1.5rem;
+  }
+  .signature-slider .slide .signature-img-box{
+    width: 31%;
+  }
+  #signature-img-box-2{
+    padding-top: 2.5rem;
+  }
+  .signature-slider .slide .signature-img-box h5{
+    display: none;
+  }
+}
 /* Signature Style Ends */
 
 /* Finest Picks Starts */
@@ -429,6 +495,19 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
 .finest-picks img{
     width: 100%;
     margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .finest-picks{
+    padding: 2rem 0 0 0;
+  }
+  .finest-picks h1{
+    font-size: 1.3rem;
+  }
+  .finest-picks img{
+    width: 100%;
+    margin-top: 1rem;
+}
 }
 /* Finest Picks Ends */
 
@@ -469,6 +548,22 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
     font-family: "Jost", serif;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 576px) {
+  .festive{
+    padding: 2rem 4% 1rem 4%;
+}
+.festive h1{
+    font-size: 1.3rem;
+}
+.festive-slider{
+    margin-top: 1.5rem;
+}
+.festive-slider .slide h5{
+  margin-top: 0.7rem;
+  font-size: 1rem;
+}
+}
 /* Festive Edit Ends */
 
 /* Quality Row Starts */
@@ -495,6 +590,25 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
     font-size: 1.1rem;
     font-weight: 500;
     margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .quality-row{
+    padding: 1rem 4% 1rem 4%;
+    flex-wrap: wrap;
+  }
+  .quality-row .quality-card{
+    width: 50%;
+    margin-bottom: 0.3rem;
+  }
+  .quality-row .quality-card .quality-img img{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .quality-row .quality-card p{
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
 }
 /* Quality Row Ends */
 
@@ -784,6 +898,7 @@ footer {
     }
     footer .footer .foot-left .foot-card {
       width: 90%;
+      padding: 1rem;
     }
     footer .footer .foot-left .foot-card h3 {
       font-size: 1.2rem !important;
