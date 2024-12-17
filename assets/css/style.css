@@ -300,6 +300,13 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
 .slick-next {
   right: 10px;
 }
+
+@media screen and (max-width: 576px) {
+  .banner-slider .slick-prev,
+  .banner-slider .slick-next {
+    opacity: 0;
+  }
+}
 /* Banner Slider Ends */
 
 /* New Arrivals Starts */
