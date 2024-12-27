@@ -76,4 +76,38 @@ body{
 .wishlist-card .remove-btn i:hover{
     color: #910000;
 }
+
+@media screen and (max-width: 768px){
+    .wishlist{
+        padding: 1rem 2.5%;
+    }
+    .wishlist-head{
+        padding-bottom: 0.3rem;
+    }
+    .wishlist-head h1{
+        font-size: 1.3rem;
+    }
+    .wishlist-head span{
+        font-size: 0.8rem;
+    }
+    .wishlist-row{
+        gap: 3%;
+        margin-top: 1rem;
+    }
+    .wishlist-card{
+        width: 48%;
+        margin-bottom: 1rem;
+    }
+    .wishlist-card .wishlist-card-body button{
+        padding: 0.4rem 0;
+        font-size: 0.8rem;
+    }
+    .wishlist-card .remove-btn{
+        top: 0.3rem;
+        right: 0.8rem;
+    }
+    .wishlist-card .remove-btn i{
+        font-size: 0.8rem;
+    }
+}
 /* Wishlist Ends */

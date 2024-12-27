@@ -898,7 +898,7 @@ footer {
   
   @media screen and (max-width: 600px) {
     footer{
-      margin-top: 9rem;
+      margin-top: 6rem;
     }
     footer .footer .foot-left {
       padding: 1rem;

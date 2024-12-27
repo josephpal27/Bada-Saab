@@ -25,6 +25,22 @@ body{
     font-style: normal;
 }
 
+@media screen and (max-width: 768px){
+    .cart{
+        padding: 1rem 2.5%;
+    }
+    .cart-head{
+        padding-bottom: 0.3rem;
+    }
+    .cart-head h1{
+        font-size: 1.3rem;
+    }
+    .cart-head span{
+        font-size: 0.8rem;
+    }
+    
+}
+
 /* Empty Cart Body Starts */
 .empty-cart{
     display: flex;
@@ -57,13 +73,35 @@ body{
     padding: 0.5rem 0;
     background-color: #d4be8f;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: 5px;
     transition: all 0.2s ease;
 }
 .empty-cart button:hover{
     background-color: #78663d;
+}
+
+@media screen and (max-width: 768px){
+    .empty-cart{
+        padding-bottom: 1rem;
+    }
+    .empty-cart img{
+        width: 210px;
+    }
+    .empty-cart h4{
+        font-size: 1.2rem;
+    }
+    .empty-cart h5{
+        font-size: 0.9rem;
+    }
+    .empty-cart button{
+        min-width: 9rem;
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+        margin: 1rem 0.2rem 0 0.2rem;
+    }
+    
 }
 /* Empty Cart Body Ends */
 
@@ -295,6 +333,10 @@ body{
 }
 .suggested-products-slider .slide .suggested-slide-btns button:hover{
     background-color: #78663d;
+}
+
+@media screen and (max-width: 768px){
+    
 }
 
 /* Slider Buttons Styles */
