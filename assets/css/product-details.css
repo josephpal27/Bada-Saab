@@ -215,4 +215,103 @@
     margin: 0;
     padding: 0.5rem 0 1.5rem 0;
 }
+
+
+@media screen and (max-width: 768px) {
+    .product-details{
+        flex-direction: column;
+        padding: 1rem 2.7%;
+    }
+    .product-details-left{
+        width: 100%;
+    }
+
+    .gallery-top .gallery-img-row img{
+        width: 93%;
+        margin-bottom: 0.65rem;
+    }
+
+    .product-details-right{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .product-details-right h1{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+    .product-details-right .product-rating i{
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+    }
+    .product-details-right .product-price p{
+        margin-top: 0.3rem;
+        font-size: 1.07rem;
+    }
+    .product-details-right .product-size p{
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+    }
+    .product-details-right .modal-title{
+        font-size: 1rem;
+    }
+    .product-details-right .modal-body{
+        padding: 0.15rem;
+    }
+    .product-details-right .product-size .modal button{
+        font-size: 1.05rem;
+    }
+    .product-details-right .size-box-row input{
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.7rem;
+        margin-right: 0.3rem;
+    }
+    .product-details-right #custom-size{
+        margin-top: 1rem;
+    }
+    .product-details-right #custom-size input[type="checkbox"]{
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+    }
+    .custom-size-box h3{
+        font-size: 1.1rem;
+    }
+    .custom-size-box input{
+        margin-top: 0.4rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    .custom-size-box input[type="button"]{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    .product-details-right .btn-row{
+        margin-top: 0.5rem;
+    }
+    .product-details-right .btn-row i{
+        font-size: 1.3rem;
+    }
+    .product-details-right .btn-row button{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        margin-left: 0.3rem;
+        border-radius: 4px;
+    }
+    .product-details-right .btn-row button i{
+        font-size: 0.8rem;
+    }
+    
+    .product-accordian{
+        margin-top: 1.8rem;
+    }
+    .product-accordian .accordion-header button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+    .product-accordian .accordion-body {
+        font-size: 0.9rem;
+        padding: 0.4rem 0 1.2rem 0;
+    }
+}
 /* Product Details Ends */

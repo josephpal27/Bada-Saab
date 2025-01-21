@@ -243,13 +243,17 @@ nav .nav-list ul li.active ~ .nav-list ul li a{
   nav .nav-search .search-box input{
     padding: 0.3rem 0 0.35rem 0.5rem;
     font-size: 0.75rem;
+    border-radius: 4px;
   }
   nav .nav-search .search-box button{
     padding: 0 0.5rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
   nav .nav-search .wishlist-btn button,
   nav .nav-search .cart-btn button{
     width: 2.2rem;
+    border-radius: 5px;
   }
   nav .nav-search i{
     font-size: 0.9rem;

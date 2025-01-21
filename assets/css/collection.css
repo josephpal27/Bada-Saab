@@ -171,4 +171,110 @@
     font-weight: 500;
     color: #6a6a6a;
 }
+
+@media screen and (min-width: 768px) {
+    .filter-box{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .collection{
+        padding: 1rem 2%;
+        flex-direction: column;
+    }
+
+    .filter-box button {
+        background-color: #d4be8f;
+        color: #fff;
+        border: none;
+        padding: 0.1rem 0.5rem;
+        border-radius: 2px;
+        font-size: 0.9rem;
+        font-family: "Jost", serif;
+        transition: all 0.1s ease;
+    }
+    .filter-box button:active {
+        background-color: #baa26f;
+    }
+    .filter-box button img {
+        width: 20px;
+    }
+
+    .collection-left{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 0 1%;
+        height: auto;
+        opacity: 1;
+        transition: all 0.2s ease;
+        margin-top: 1rem;
+    }
+    .collection-left.hide{
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .collection-accordion {
+        padding: 0.5rem 0.7rem;
+    }
+    .collection-accordion .accordion-button {
+        font-size: 0.85rem;
+    }
+    .collection-accordion input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    .collection-accordion .range-with-price .range-price h5{
+        margin-top: 8px;
+        font-size: 1.05rem;
+    }
+    .collection-accordion p{
+        font-size: 0.9rem;
+    }
+    
+    .accordian-apply-btn{
+        margin-top: 0.8rem;
+    }
+    .accordian-apply-btn button{
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+
+    
+    .collection-right{
+        width: 100%;
+        max-height: max-content;
+        margin-top: -1rem;
+    }
+    .collection-right::-webkit-scrollbar {
+        width: 0;
+    }
+    .collection-card-row{
+        justify-content: space-between;
+        gap: 0;
+        padding: 0.5rem 1.5% 0 1.5%;
+    }
+    .collection-card{
+        width: 48%;
+        padding: 0.4rem;
+        margin-bottom: 1.2rem;
+    }
+    .collection-card .card-img i{
+        top: 0.6rem;
+        right: 0.5rem;
+        font-size: 1rem;
+    }
+    .collection-card h3{
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+    .collection-card p{
+        font-size: 0.8rem;
+    }
+    
+}
 /* Collection Main Ends */

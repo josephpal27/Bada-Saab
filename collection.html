@@ -101,8 +101,12 @@
 
     <!-- Collection Main Starts -->
     <main class="collection">
+        <!-- Fliter Button For Small Screens -->
+        <div class="filter-box">
+            <button class="filter-btn"><img src="assets/images/filter.png" alt="image" class="img-fluid"> Filter</button>
+        </div> 
         <!-- Left -->
-        <div class="collection-left">
+        <div class="collection-left hide">
             <!-- Accordian -->
             <div class="collection-accordion">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -119,8 +123,8 @@
                             <div class="accordion-body">
                                 <p><span><input type="checkbox" name="sherwani" id="sherwani"> Sherwani</span></p>
                                 <p><span><input type="checkbox" name="tuxedo" id="tuxedo"> Tuxedo</span></p>
-                                <p><span><input type="checkbox" name="jodhpuri " id="jodhpuri "> Jodhpuri</span></p>
-                                <p><span><input type="checkbox" name="indowestern " id="indowestern "> Indowestern</span></p>
+                                <p><span><input type="checkbox" name="jodhpuri " id="jodhpuri"> Jodhpuri</span></p>
+                                <p><span><input type="checkbox" name="indowestern " id="indowestern"> Indowestern</span></p>
                             </div>
                         </div>
                     </div>
@@ -503,7 +507,7 @@
         const priceDisplay = document.querySelector('.range-price h5');
 
         rangeInput.min = 0;
-        rangeInput.max = 10000;
+        rangeInput.max = 100000;
         rangeInput.step = 1;
         rangeInput.value = 0;
 
@@ -511,6 +515,16 @@
             priceDisplay.textContent = rangeInput.value;
         });
     </script>
+
+    <!-- Functionality For Filter Dropdown in Small Screens -->
+     <script>
+        let filterBtn = document.querySelector('.filter-box button');
+        let filterBox = document.querySelector('.collection-left');
+
+        filterBtn.addEventListener('click', () => {
+            filterBox.classList.toggle('hide');
+        })
+     </script>
 
     <!-- JS Link -->
     <script src="assets/js/script.js"></script>
