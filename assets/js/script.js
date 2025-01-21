@@ -220,7 +220,7 @@ document.querySelector('.share-btn').addEventListener('click', async () => {
             console.error('Error sharing: ', err);
             }
         } else {
-            alert('Share options not supported in this browser. The link is copied to your clipboard.');
+            alert('Share option is not supported in this browser. The link is copied to your clipboard.');
         }
     });
 
