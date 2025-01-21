@@ -108,3 +108,47 @@ body{
 .form-foot-text a:hover{
     color: #755e28;
 }
+
+
+@media screen and (max-width: 768px) {
+    .account{
+        padding: 1.5rem 0.7rem;
+    }
+    .account h1{
+        font-size: 1.5rem;
+    }
+    .account-form{
+        margin-top: 1.2rem;
+    }
+    .account-form form{
+        width: 100%;
+        padding: 1rem 1rem 2.5rem 1rem;
+        border-radius: 7px;
+    }
+    .account-form .input-box{
+        margin-bottom: 0.8rem;
+    }
+    .account-form .input-box p{
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+    }
+    .account-form form input{
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+    .account-form form input[type="checkbox"]{
+        width: 14px;
+        height: 14px;
+    }
+    .account-form form #checkBoxInput p{
+       font-size: 0.8rem;
+    }
+    .account-form form .submit-btn button{
+       width: 35%;
+       padding: 0.4rem 0;
+       font-size: 0.8rem;
+    }
+    .form-foot-text a{
+        font-size: 0.8rem;
+    }
+}

@@ -428,7 +428,9 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    
+    .suggested-products{
+        display: none;
+    }
 }
 
 /* Slider Buttons Styles */
@@ -469,5 +471,11 @@ body{
 /* Footer Starts */
 footer{
     margin-top: 8rem;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        margin-top: 6rem;
+    }
 }
 /* Footer Ends */
